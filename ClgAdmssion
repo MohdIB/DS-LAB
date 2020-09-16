@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int id,a,m;
+    printf("Enter Student ID:");
+    scanf("%d",&id);
+    printf("\nEnter Age:");
+    scanf("%d",&a);
+    printf("\nEnter Marks:");
+    scanf("%d",&m);
+    if(a>20 && (m>=0 && m<=100))
+    {
+        printf("\nStudent data Eligible.");
+        if(m>=65)
+         printf("\nStudent is admitted since mark is not greater than 64");
+        else
+         printf("\nStudent not admitted");
+    }
+    else
+        printf("\nStudent data not Eligible!");
+    return 0;
+}
