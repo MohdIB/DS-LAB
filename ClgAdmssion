@@ -1,18 +1,23 @@
 #include <stdio.h>
 
+struct stud
+{
+  int id,a,m;
+}s;
+
+
 int main()
 {
-    int id,a,m;
     printf("Enter Student ID:");
-    scanf("%d",&id);
+    scanf("%d",&s.id);
     printf("\nEnter Age:");
-    scanf("%d",&a);
+    scanf("%d",&s.a);
     printf("\nEnter Marks(0-100):");
-    scanf("%d",&m);
-    if(a>20 && (m>=0 && m<=100))
+    scanf("%d",&s.m);
+    if(s.a>20 && (s.m>=0 && s.m<=100))
     {
         printf("\nStudent data Eligible.");
-        if(m>=65)
+        if(s.m>=65)
          printf("\nStudent is admitted.Congrats!");
         else
          printf("\nStudent not admitted since mark is not greater than 64");
