@@ -7,15 +7,15 @@ int main()
     scanf("%d",&id);
     printf("\nEnter Age:");
     scanf("%d",&a);
-    printf("\nEnter Marks:");
+    printf("\nEnter Marks(0-100):");
     scanf("%d",&m);
     if(a>20 && (m>=0 && m<=100))
     {
         printf("\nStudent data Eligible.");
         if(m>=65)
-         printf("\nStudent is admitted since mark is not greater than 64");
+         printf("\nStudent is admitted.Congrats!");
         else
-         printf("\nStudent not admitted");
+         printf("\nStudent not admitted since mark is not greater than 64");
     }
     else
         printf("\nStudent data not Eligible!");
